@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css3兼容</title>
+</head>
+<body>
+	<div id="d" style="background: red">来啦</div>
+	<script src="./prefix.js"></script>
+	<script type="text/javascript">
+		var s = prefixFree('transform'),
+			d = document.getElementById('d');
+		d.style[s] = ' translateX(50px)';
+	</script>
+</body>
+</html>
